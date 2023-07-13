@@ -184,7 +184,7 @@ struct CppClosure<F, R (Args...)>
 
 template <typename T, typename R, typename... Args>
 bool connect(void *instance, const char *detailedSignal,
-             T *receiver, R (T::*slot)(Args...), ConnectFlags flags = QGLib::ConnectFlags())
+             T *receiver, R (T::*slot)(Args...), ConnectFlags flags = ConnectFlags())
 {
     typedef Private::MemberFunction<T, R, Args...> F;
 
