@@ -75,7 +75,7 @@ public:
 protected:
     ObjectBase() {}
     virtual ~ObjectBase() {}
-    Q_DISABLE_COPY(ObjectBase);
+    Q_DISABLE_COPY(ObjectBase)
 
     virtual void ref(bool increaseRef);
     virtual void unref();

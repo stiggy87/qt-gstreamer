@@ -126,7 +126,7 @@ public:
     int commentCount() const;
 
     QString extendedComment(int index = 0) const;
-    void setExtendedComment(const QString & value, TagMergeMode mode = TagMergeReplaceAll);;
+    void setExtendedComment(const QString & value, TagMergeMode mode = TagMergeReplaceAll);
     int extendedCommentCount() const;
 
     quint32 trackNumber() const;

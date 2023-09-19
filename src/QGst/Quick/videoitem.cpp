@@ -21,6 +21,7 @@
 #include <QtQuick/QSGNode>
 #include <QtQuick/QSGFlatColorMaterial>
 #include "../../QGlib/Signal"
+#include <QtCore/QObject>
 
 namespace QGst {
 namespace Quick {

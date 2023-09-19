@@ -71,7 +71,7 @@ bool ObjectStore::take(const void * ptr)
     (gs->refCount[ptr]).deref();
 
 #if (QT_VERSION >= QT_VERSION_CHECK(5, 0, 0))
-    if (!gs->refCount[ptr].load()) {
+    if (!gs->refCount[ptr].loadRelaxed()) {
 #else
     if (!gs->refCount[ptr]) {
 #endif

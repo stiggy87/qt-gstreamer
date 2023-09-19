@@ -67,9 +67,10 @@ public:
      * is called. The surface will always keep a reference to this element.
      */
     ElementPtr videoSink() const;
-
-protected:
-    QTGSTREAMERQUICK_NO_EXPORT void onUpdate();
+    void setVideoSink(QGst::ElementPtr _video_sink) const;
+    /*QTGSTREAMERQUICK_NO_EXPORT*/ void onUpdate();
+// protected:
+//     QTGSTREAMERQUICK_NO_EXPORT void onUpdate();
 
 private:
     friend class VideoItem;

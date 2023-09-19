@@ -150,7 +150,7 @@ private:
     QTGSTREAMER_NO_EXPORT
     static StructurePtr fromCaps(GstStructure *structure, const CapsPtr & parent);
 
-    Q_DISABLE_COPY(SharedStructure);
+    Q_DISABLE_COPY(SharedStructure)
 };
 
 /*! \relates QGst::Structure */

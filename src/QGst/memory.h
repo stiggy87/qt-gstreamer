@@ -36,7 +36,7 @@ public:
 private:
     friend class Buffer;
     friend class Memory;
-    Q_DISABLE_COPY(MapInfo);
+    Q_DISABLE_COPY(MapInfo)
 
     void *m_object;
 };

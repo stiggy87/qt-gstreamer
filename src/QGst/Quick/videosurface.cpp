@@ -59,6 +59,19 @@ ElementPtr VideoSurface::videoSink() const
     return d->videoSink;
 }
 
+void VideoSurface::setVideoSink(QGst::ElementPtr _video_sink) const
+{
+    if (d->videoSink.isNull())
+    {
+        d->videoSink = _video_sink;
+
+        QGlib::connect(d->videoSink, "update",
+                       const_cast<VideoSurface*>(this),
+                       &VideoSurface::onUpdate);
+
+    }
+}
+
 void VideoSurface::onUpdate()
 {
     Q_FOREACH(QQuickItem *item, d->items) {

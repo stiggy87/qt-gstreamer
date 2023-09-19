@@ -44,7 +44,7 @@ public:
         LaxValidation = 1<<4,
         Deprecated = 1<<31
     };
-    Q_DECLARE_FLAGS(ParamFlags, ParamFlag);
+    Q_DECLARE_FLAGS(ParamFlags, ParamFlag)
 
     QString name() const;
     QString nick() const;
